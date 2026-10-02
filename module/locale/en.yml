@@ -1,0 +1,66 @@
+overlay_group: Resource grid
+overlay_group_descr: |
+  Shows the grid the AI uses when it looks for places to put its resource buildings:
+  quarries, iron mines, pitch rigs and woodcutters' huts. The AI does not judge tiles
+  one at a time, it judges blocks of 5 x 5 tiles, counting the boulders, iron, oil and
+  trees in each block, so a resource patch that sits neatly inside one block is worth
+  more to it than the same patch spread over four.
+
+  The overlay is drawn on top of the terrain in the map editor only, and only while you
+  are looking at the map. Press the key below to switch it on and off. Leaving the
+  editor switches it off again, so it is never on when you did not ask for it.
+
+  The key combinations offered here all do nothing in the game, so switching the
+  overlay on never triggers something else as well.
+overlay_key: Overlay key
+overlay_key_tooltip: Key combination that switches the grid on and off inside the map editor. Default Alt + G.
+overlay_outside_editor: Also outside the map editor
+overlay_outside_editor_tooltip: Let the key work in normal games too, so the grid can be checked against a real map. Turn it off to keep the overlay to the editor.
+overlay_grid_colour: Grid colour
+overlay_grid_colour_tooltip: Colour of the 5 x 5 block lines. They are two pixels wide. Default white.
+rotation_group: Keep rotation boundaries
+rotation_group_descr: |
+  The map is also divided into four regions by where a keep sits relative to the map
+  centre. An AI whose keep lands in one region builds its whole castle turned a quarter
+  further round than one whose keep lands in the next, so the same AIV comes out facing
+  a different way depending on which side of these lines the keep is placed.
+
+  The four boundaries meet at the centre tile of the map and run out to the edges at a
+  1 to 2 slope. The game's own boundary is a staircase that wanders up to about one tile
+  to either side of the straight line drawn here, so treat a keep placed right on a line
+  as undecided.
+rotation_lines: Show rotation boundaries
+rotation_lines_tooltip: Draw the four lines where the keep rotation changes, along with the resource grid.
+rotation_colour: Boundary colour
+rotation_colour_tooltip: Colour of the keep rotation boundaries. They are two pixels wide. Default cyan, so they do not clash with the red mine footprint.
+colour_white: White
+colour_yellow: Yellow
+colour_cyan: Cyan
+colour_green: Green
+colour_magenta: Magenta
+colour_orange: Orange
+colour_red: Red
+colour_black: Black
+overlay_flattened_only: Only in flattened view
+overlay_flattened_only_tooltip: On, the overlay only appears in the flattened view (spacebar in the map editor) and stays hidden in the normal view and in the V view. Off, it shows in all of them.
+mine_group: Iron mine footprint
+mine_group_descr: |
+  Marks the tiles inside every block that an iron mine would cover. The AI asks for a
+  block and then puts the mine flat in that block's low corner - no shuffling about,
+  unlike the quarry, which tries nine positions around the corner - so the footprint is
+  always in the same place in the block and the last row and column of the block stay
+  empty.
+
+  Only the two far edges are drawn, meeting at the footprint's far corner. The other two
+  are the grid lines themselves, so together they close the box.
+
+  A marker whose corner falls partly off the screen is left out rather than cut short, so
+  you may see one missing right at the edge of the view.
+mine_boxes: Show the mine footprint
+mine_boxes_tooltip: Draw the far corner of the tiles an iron mine would cover inside each block.
+mine_colour: Footprint colour
+mine_colour_tooltip: Colour of the iron mine footprint edges. They are two pixels wide. Default red.
+tune_mine_size: Footprint size
+tune_mine_size_tooltip: How many tiles across the mine footprint is. The game's iron mine is 4. At 5 the edges land on the grid lines and draw over them.
+overlay_hide_in_v_view: Hide in the V view
+overlay_hide_in_v_view_tooltip: Hide the overlay while the V key's view is on, the one that leaves out everything standing on the map. Turn it off if the overlay ever goes missing when it should not.

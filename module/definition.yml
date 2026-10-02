@@ -1,0 +1,7 @@
+name: resource-grid-overlay
+display-name: Resource Grid Overlay
+type: module
+version: 1.1.0
+author: Monsterfish
+meta:
+  version: 1.0.0

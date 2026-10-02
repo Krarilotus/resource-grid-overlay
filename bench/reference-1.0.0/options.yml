@@ -1,0 +1,230 @@
+meta:
+  version: 1.0.0
+options:
+- display: GroupBox
+  category: [Resource Grid Overlay]
+  header: '{{overlay_group}}'
+  text: '{{overlay_group_descr}}'
+  hasHeader: true
+  children:
+  - url: resource-grid-overlay.overlay.key
+    name: resource-grid-overlay-key
+    text: '{{overlay_key}}'
+    tooltip: '{{overlay_key_tooltip}}'
+    display: Choice
+    contents:
+      type: string
+      value: letter_g
+      choices:
+      - name: letter_g
+        text: 'Alt + G'
+      - name: letter_a
+        text: 'Alt + A'
+      - name: letter_b
+        text: 'Alt + B'
+      - name: letter_f
+        text: 'Alt + F'
+      - name: letter_i
+        text: 'Alt + I'
+      - name: letter_j
+        text: 'Alt + J'
+      - name: letter_l
+        text: 'Alt + L'
+      - name: letter_m
+        text: 'Alt + M'
+      - name: letter_n
+        text: 'Alt + N'
+      - name: letter_o
+        text: 'Alt + O'
+      - name: letter_p
+        text: 'Alt + P'
+      - name: letter_s
+        text: 'Alt + S'
+      - name: letter_w
+        text: 'Alt + W'
+      - name: letter_y
+        text: 'Alt + Y'
+      - name: letter_z
+        text: 'Alt + Z'
+      - name: f1
+        text: 'Alt + F1'
+      - name: f2
+        text: 'Alt + F2'
+      - name: f3
+        text: 'Alt + F3'
+      - name: f4
+        text: 'Alt + F4'
+      - name: f5
+        text: 'Alt + F5'
+      - name: f6
+        text: 'Alt + F6'
+      - name: f7
+        text: 'Alt + F7'
+      - name: f8
+        text: 'Alt + F8'
+      - name: f9
+        text: 'Alt + F9'
+      - name: numpad_multiply
+        text: 'Alt + Numpad *'
+      - name: numpad_add
+        text: 'Alt + Numpad +'
+      - name: numpad_subtract
+        text: 'Alt + Numpad -'
+      - name: numpad_decimal
+        text: 'Alt + Numpad .'
+      - name: numpad_divide
+        text: 'Alt + Numpad /'
+      - name: insert
+        text: 'Alt + Insert'
+      - name: delete_key
+        text: 'Alt + Delete'
+      - name: home
+        text: 'Alt + Home'
+      - name: end_key
+        text: 'Alt + End'
+      - name: page_up
+        text: 'Alt + Page Up'
+      - name: page_down
+        text: 'Alt + Page Down'
+      - name: caps_lock
+        text: 'Alt + Caps Lock'
+  - url: resource-grid-overlay.overlay.outside_editor
+    name: resource-grid-overlay-outside-editor
+    text: '{{overlay_outside_editor}}'
+    tooltip: '{{overlay_outside_editor_tooltip}}'
+    display: Switch
+    contents:
+      type: boolean
+      value: true
+  - url: resource-grid-overlay.overlay.flattened_only
+    name: resource-grid-overlay-flattened-only
+    text: '{{overlay_flattened_only}}'
+    tooltip: '{{overlay_flattened_only_tooltip}}'
+    display: Switch
+    contents:
+      type: boolean
+      value: true
+  - url: resource-grid-overlay.overlay.hide_in_v_view
+    name: resource-grid-overlay-hide-in-v-view
+    text: '{{overlay_hide_in_v_view}}'
+    tooltip: '{{overlay_hide_in_v_view_tooltip}}'
+    display: Switch
+    contents:
+      type: boolean
+      value: true
+  - url: resource-grid-overlay.overlay.grid_colour
+    name: resource-grid-overlay-grid-colour
+    text: '{{overlay_grid_colour}}'
+    tooltip: '{{overlay_grid_colour_tooltip}}'
+    display: Choice
+    contents:
+      type: string
+      value: white
+      choices:
+      - name: white
+        text: '{{colour_white}}'
+      - name: yellow
+        text: '{{colour_yellow}}'
+      - name: cyan
+        text: '{{colour_cyan}}'
+      - name: green
+        text: '{{colour_green}}'
+      - name: magenta
+        text: '{{colour_magenta}}'
+      - name: orange
+        text: '{{colour_orange}}'
+      - name: red
+        text: '{{colour_red}}'
+      - name: black
+        text: '{{colour_black}}'
+- display: GroupBox
+  category: [Resource Grid Overlay]
+  header: '{{rotation_group}}'
+  text: '{{rotation_group_descr}}'
+  hasHeader: true
+  children:
+  - url: resource-grid-overlay.overlay.rotation_lines
+    name: resource-grid-overlay-rotation-lines
+    text: '{{rotation_lines}}'
+    tooltip: '{{rotation_lines_tooltip}}'
+    display: Switch
+    contents:
+      type: boolean
+      value: true
+  - url: resource-grid-overlay.overlay.rotation_colour
+    name: resource-grid-overlay-rotation-colour
+    text: '{{rotation_colour}}'
+    tooltip: '{{rotation_colour_tooltip}}'
+    enabled: resource-grid-overlay.overlay.rotation_lines
+    display: Choice
+    contents:
+      type: string
+      value: cyan
+      choices:
+      - name: cyan
+        text: '{{colour_cyan}}'
+      - name: white
+        text: '{{colour_white}}'
+      - name: yellow
+        text: '{{colour_yellow}}'
+      - name: red
+        text: '{{colour_red}}'
+      - name: green
+        text: '{{colour_green}}'
+      - name: magenta
+        text: '{{colour_magenta}}'
+      - name: orange
+        text: '{{colour_orange}}'
+      - name: black
+        text: '{{colour_black}}'
+- display: GroupBox
+  category: [Resource Grid Overlay]
+  header: '{{mine_group}}'
+  text: '{{mine_group_descr}}'
+  hasHeader: true
+  children:
+  - url: resource-grid-overlay.overlay.mine_boxes
+    name: resource-grid-overlay-mine-boxes
+    text: '{{mine_boxes}}'
+    tooltip: '{{mine_boxes_tooltip}}'
+    display: Switch
+    contents:
+      type: boolean
+      value: true
+  - url: resource-grid-overlay.overlay.mine_colour
+    name: resource-grid-overlay-mine-colour
+    text: '{{mine_colour}}'
+    tooltip: '{{mine_colour_tooltip}}'
+    enabled: resource-grid-overlay.overlay.mine_boxes
+    display: Choice
+    contents:
+      type: string
+      value: red
+      choices:
+      - name: red
+        text: '{{colour_red}}'
+      - name: white
+        text: '{{colour_white}}'
+      - name: yellow
+        text: '{{colour_yellow}}'
+      - name: cyan
+        text: '{{colour_cyan}}'
+      - name: green
+        text: '{{colour_green}}'
+      - name: magenta
+        text: '{{colour_magenta}}'
+      - name: orange
+        text: '{{colour_orange}}'
+      - name: black
+        text: '{{colour_black}}'
+  - url: resource-grid-overlay.tune.mine_size
+    name: resource-grid-overlay-tune-mine-size
+    text: '{{tune_mine_size}}'
+    tooltip: '{{tune_mine_size_tooltip}}'
+    enabled: resource-grid-overlay.overlay.mine_boxes
+    display: Number
+    contents:
+      value: 4
+      min: 1
+      max: 5
+      step: 1
