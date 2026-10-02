@@ -128,6 +128,7 @@ def check(label, result, expect_painted=None, expect_lua=None):
 
 
 def main():
+    global failures
     started = time.time()
     for exe_path, label in ((VAN_PATH, 'plain'), (EXT_PATH, 'extreme')):
         print('==', label)
