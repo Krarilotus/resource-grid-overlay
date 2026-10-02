@@ -56,3 +56,6 @@ rotation_colour: Color de límites
 rotation_group: Orientación del castillo
 rotation_lines: Mostrar límites de rotación del castillo
 tune_mine_size: Anchura de superficie (casillas)
+tags.maps: Mapas
+tags.interface: Interfaz
+tags.tools: Herramientas

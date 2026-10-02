@@ -56,3 +56,6 @@ rotation_colour: Цвет границ
 rotation_group: Ориентация замка
 rotation_lines: Показать границы поворота замка
 tune_mine_size: Ширина площади (клетки)
+tags.maps: Карты
+tags.interface: Интерфейс
+tags.tools: Инструменты

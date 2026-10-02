@@ -56,3 +56,6 @@ rotation_colour: Sınır rengi
 rotation_group: Kale yönü
 rotation_lines: Kale dönüş sınırlarını göster
 tune_mine_size: Alan genişliği (kare)
+tags.maps: Haritalar
+tags.interface: Arayüz
+tags.tools: Araçlar

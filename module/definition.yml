@@ -11,3 +11,7 @@ game:
 dependencies:
   framework: '>=3.0.7'
   frontend: '>=1.0.2'
+tags:
+- maps
+- interface
+- tools

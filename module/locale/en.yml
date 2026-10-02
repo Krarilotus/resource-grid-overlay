@@ -56,3 +56,6 @@ rotation_colour: Boundary color
 rotation_group: Castle orientation
 rotation_lines: Show castle-rotation boundaries
 tune_mine_size: Footprint width (tiles)
+tags.maps: Maps
+tags.interface: Interface
+tags.tools: Tools

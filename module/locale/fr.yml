@@ -56,3 +56,6 @@ rotation_colour: Couleur des limites
 rotation_group: Orientation du château
 rotation_lines: Afficher les limites de rotation du château
 tune_mine_size: Largeur de l'emprise (cases)
+tags.maps: Cartes
+tags.interface: Interface
+tags.tools: Outils
