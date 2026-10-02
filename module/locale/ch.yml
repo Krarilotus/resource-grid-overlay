@@ -56,3 +56,6 @@ rotation_colour: 分界线颜色
 rotation_group: 城堡朝向
 rotation_lines: 显示城堡旋转分界线
 tune_mine_size: 占地宽度（格）
+tags.maps: 地图
+tags.interface: 界面
+tags.tools: 工具

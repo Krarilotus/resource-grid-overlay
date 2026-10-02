@@ -56,3 +56,6 @@ rotation_colour: Határ színe
 rotation_group: Vár tájolása
 rotation_lines: Várforgatási határok mutatása
 tune_mine_size: Alaprajz szélessége (mező)
+tags.maps: Térképek
+tags.interface: Kezelőfelület
+tags.tools: Eszközök

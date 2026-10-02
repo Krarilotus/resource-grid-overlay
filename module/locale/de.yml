@@ -56,3 +56,6 @@ rotation_colour: Grenzfarbe
 rotation_group: Burgausrichtung
 rotation_lines: Grenzen der Burgdrehung zeigen
 tune_mine_size: Breite der Grundfläche (Felder)
+tags.maps: Karten
+tags.interface: Oberfläche
+tags.tools: Werkzeuge

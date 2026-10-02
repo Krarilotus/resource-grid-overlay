@@ -4,4 +4,5 @@
   <file src="init.lua" />
   <file src="locale" />
   <file src="options.yml" />
+  <file src="CREDITS.md" />
 </files></config>
