@@ -1,0 +1,7 @@
+<config><files>
+  <file src="config.yml" />
+  <file src="definition.yml" />
+  <file src="init.lua" />
+  <file src="locale" />
+  <file src="options.yml" />
+</files></config>

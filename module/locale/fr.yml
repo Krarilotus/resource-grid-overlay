@@ -1,0 +1,58 @@
+colour_black: Noir
+colour_cyan: Cyan
+colour_green: Vert
+colour_magenta: Magenta
+colour_orange: Orange
+colour_red: Rouge
+colour_white: Blanc
+colour_yellow: Jaune
+key_caps_lock: Alt + Verr. maj.
+key_delete_key: Alt + Suppr
+key_end_key: Alt + Fin
+key_f1: Alt + F1
+key_f2: Alt + F2
+key_f3: Alt + F3
+key_f4: Alt + F4
+key_f5: Alt + F5
+key_f6: Alt + F6
+key_f7: Alt + F7
+key_f8: Alt + F8
+key_f9: Alt + F9
+key_home: Alt + Début
+key_insert: Alt + Inser
+key_letter_a: Alt + A
+key_letter_b: Alt + B
+key_letter_f: Alt + F
+key_letter_g: Alt + G
+key_letter_i: Alt + I
+key_letter_j: Alt + J
+key_letter_l: Alt + L
+key_letter_m: Alt + M
+key_letter_n: Alt + N
+key_letter_o: Alt + O
+key_letter_p: Alt + P
+key_letter_s: Alt + S
+key_letter_w: Alt + W
+key_letter_y: Alt + Y
+key_letter_z: Alt + Z
+key_numpad_add: Alt + Pavé numérique +
+key_numpad_decimal: Alt + Pavé numérique .
+key_numpad_divide: Alt + Pavé numérique /
+key_numpad_multiply: Alt + Pavé numérique *
+key_numpad_subtract: Alt + Pavé numérique -
+key_page_down: Alt + Page suiv.
+key_page_up: Alt + Page préc.
+mine_boxes: Afficher l'emprise de la mine de fer
+mine_colour: Couleur de l'emprise
+mine_group: Emprise de la mine de fer
+overlay_flattened_only: Afficher uniquement en vue aplatie
+overlay_grid_colour: Couleur de la grille
+overlay_group: Grille des ressources
+overlay_hide_in_v_view: Masquer dans la vue V
+overlay_key: Raccourci de la grille (Alt+touche)
+overlay_outside_editor: Autoriser la grille en partie
+qol: Quality of Life
+rotation_colour: Couleur des limites
+rotation_group: Orientation du château
+rotation_lines: Afficher les limites de rotation du château
+tune_mine_size: Largeur de l'emprise (cases)

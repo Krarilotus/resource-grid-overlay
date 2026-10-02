@@ -1,0 +1,58 @@
+colour_black: Negro
+colour_cyan: Cian
+colour_green: Verde
+colour_magenta: Magenta
+colour_orange: Naranja
+colour_red: Rojo
+colour_white: Blanco
+colour_yellow: Amarillo
+key_caps_lock: Alt + Bloq Mayús
+key_delete_key: Alt + Supr
+key_end_key: Alt + Fin
+key_f1: Alt + F1
+key_f2: Alt + F2
+key_f3: Alt + F3
+key_f4: Alt + F4
+key_f5: Alt + F5
+key_f6: Alt + F6
+key_f7: Alt + F7
+key_f8: Alt + F8
+key_f9: Alt + F9
+key_home: Alt + Inicio
+key_insert: Alt + Insert
+key_letter_a: Alt + A
+key_letter_b: Alt + B
+key_letter_f: Alt + F
+key_letter_g: Alt + G
+key_letter_i: Alt + I
+key_letter_j: Alt + J
+key_letter_l: Alt + L
+key_letter_m: Alt + M
+key_letter_n: Alt + N
+key_letter_o: Alt + O
+key_letter_p: Alt + P
+key_letter_s: Alt + S
+key_letter_w: Alt + W
+key_letter_y: Alt + Y
+key_letter_z: Alt + Z
+key_numpad_add: Alt + Teclado numérico +
+key_numpad_decimal: Alt + Teclado numérico .
+key_numpad_divide: Alt + Teclado numérico /
+key_numpad_multiply: Alt + Teclado numérico *
+key_numpad_subtract: Alt + Teclado numérico -
+key_page_down: Alt + Av Pág
+key_page_up: Alt + Re Pág
+mine_boxes: Mostrar superficie de mina de hierro
+mine_colour: Color de superficie
+mine_group: Superficie de mina de hierro
+overlay_flattened_only: Mostrar solo en vista plana
+overlay_grid_colour: Color de cuadrícula
+overlay_group: Cuadrícula de recursos
+overlay_hide_in_v_view: Ocultar en la vista de la tecla V
+overlay_key: Atajo de cuadrícula (Alt+tecla)
+overlay_outside_editor: Permitir la cuadrícula durante partidas
+qol: Quality of Life
+rotation_colour: Color de límites
+rotation_group: Orientación del castillo
+rotation_lines: Mostrar límites de rotación del castillo
+tune_mine_size: Anchura de superficie (casillas)

@@ -2,96 +2,94 @@ meta:
   version: 1.0.0
 options:
 - display: GroupBox
-  category: [Resource Grid Overlay]
+  category:
+  - '{{qol}}'
   header: '{{overlay_group}}'
-  text: '{{overlay_group_descr}}'
   hasHeader: true
   children:
   - url: resource-grid-overlay.overlay.key
     name: resource-grid-overlay-key
     text: '{{overlay_key}}'
-    tooltip: '{{overlay_key_tooltip}}'
     display: Choice
     contents:
       type: string
       value: letter_g
       choices:
       - name: letter_g
-        text: 'Alt + G'
+        text: '{{key_letter_g}}'
       - name: letter_a
-        text: 'Alt + A'
+        text: '{{key_letter_a}}'
       - name: letter_b
-        text: 'Alt + B'
+        text: '{{key_letter_b}}'
       - name: letter_f
-        text: 'Alt + F'
+        text: '{{key_letter_f}}'
       - name: letter_i
-        text: 'Alt + I'
+        text: '{{key_letter_i}}'
       - name: letter_j
-        text: 'Alt + J'
+        text: '{{key_letter_j}}'
       - name: letter_l
-        text: 'Alt + L'
+        text: '{{key_letter_l}}'
       - name: letter_m
-        text: 'Alt + M'
+        text: '{{key_letter_m}}'
       - name: letter_n
-        text: 'Alt + N'
+        text: '{{key_letter_n}}'
       - name: letter_o
-        text: 'Alt + O'
+        text: '{{key_letter_o}}'
       - name: letter_p
-        text: 'Alt + P'
+        text: '{{key_letter_p}}'
       - name: letter_s
-        text: 'Alt + S'
+        text: '{{key_letter_s}}'
       - name: letter_w
-        text: 'Alt + W'
+        text: '{{key_letter_w}}'
       - name: letter_y
-        text: 'Alt + Y'
+        text: '{{key_letter_y}}'
       - name: letter_z
-        text: 'Alt + Z'
+        text: '{{key_letter_z}}'
       - name: f1
-        text: 'Alt + F1'
+        text: '{{key_f1}}'
       - name: f2
-        text: 'Alt + F2'
+        text: '{{key_f2}}'
       - name: f3
-        text: 'Alt + F3'
+        text: '{{key_f3}}'
       - name: f4
-        text: 'Alt + F4'
+        text: '{{key_f4}}'
       - name: f5
-        text: 'Alt + F5'
+        text: '{{key_f5}}'
       - name: f6
-        text: 'Alt + F6'
+        text: '{{key_f6}}'
       - name: f7
-        text: 'Alt + F7'
+        text: '{{key_f7}}'
       - name: f8
-        text: 'Alt + F8'
+        text: '{{key_f8}}'
       - name: f9
-        text: 'Alt + F9'
+        text: '{{key_f9}}'
       - name: numpad_multiply
-        text: 'Alt + Numpad *'
+        text: '{{key_numpad_multiply}}'
       - name: numpad_add
-        text: 'Alt + Numpad +'
+        text: '{{key_numpad_add}}'
       - name: numpad_subtract
-        text: 'Alt + Numpad -'
+        text: '{{key_numpad_subtract}}'
       - name: numpad_decimal
-        text: 'Alt + Numpad .'
+        text: '{{key_numpad_decimal}}'
       - name: numpad_divide
-        text: 'Alt + Numpad /'
+        text: '{{key_numpad_divide}}'
       - name: insert
-        text: 'Alt + Insert'
+        text: '{{key_insert}}'
       - name: delete_key
-        text: 'Alt + Delete'
+        text: '{{key_delete_key}}'
       - name: home
-        text: 'Alt + Home'
+        text: '{{key_home}}'
       - name: end_key
-        text: 'Alt + End'
+        text: '{{key_end_key}}'
       - name: page_up
-        text: 'Alt + Page Up'
+        text: '{{key_page_up}}'
       - name: page_down
-        text: 'Alt + Page Down'
+        text: '{{key_page_down}}'
       - name: caps_lock
-        text: 'Alt + Caps Lock'
+        text: '{{key_caps_lock}}'
   - url: resource-grid-overlay.overlay.outside_editor
     name: resource-grid-overlay-outside-editor
     text: '{{overlay_outside_editor}}'
-    tooltip: '{{overlay_outside_editor_tooltip}}'
     display: Switch
     contents:
       type: boolean
@@ -99,7 +97,6 @@ options:
   - url: resource-grid-overlay.overlay.flattened_only
     name: resource-grid-overlay-flattened-only
     text: '{{overlay_flattened_only}}'
-    tooltip: '{{overlay_flattened_only_tooltip}}'
     display: Switch
     contents:
       type: boolean
@@ -107,7 +104,6 @@ options:
   - url: resource-grid-overlay.overlay.hide_in_v_view
     name: resource-grid-overlay-hide-in-v-view
     text: '{{overlay_hide_in_v_view}}'
-    tooltip: '{{overlay_hide_in_v_view_tooltip}}'
     display: Switch
     contents:
       type: boolean
@@ -115,7 +111,6 @@ options:
   - url: resource-grid-overlay.overlay.grid_colour
     name: resource-grid-overlay-grid-colour
     text: '{{overlay_grid_colour}}'
-    tooltip: '{{overlay_grid_colour_tooltip}}'
     display: Choice
     contents:
       type: string
@@ -138,15 +133,14 @@ options:
       - name: black
         text: '{{colour_black}}'
 - display: GroupBox
-  category: [Resource Grid Overlay]
+  category:
+  - '{{qol}}'
   header: '{{rotation_group}}'
-  text: '{{rotation_group_descr}}'
   hasHeader: true
   children:
   - url: resource-grid-overlay.overlay.rotation_lines
     name: resource-grid-overlay-rotation-lines
     text: '{{rotation_lines}}'
-    tooltip: '{{rotation_lines_tooltip}}'
     display: Switch
     contents:
       type: boolean
@@ -154,7 +148,6 @@ options:
   - url: resource-grid-overlay.overlay.rotation_colour
     name: resource-grid-overlay-rotation-colour
     text: '{{rotation_colour}}'
-    tooltip: '{{rotation_colour_tooltip}}'
     enabled: resource-grid-overlay.overlay.rotation_lines
     display: Choice
     contents:
@@ -178,15 +171,14 @@ options:
       - name: black
         text: '{{colour_black}}'
 - display: GroupBox
-  category: [Resource Grid Overlay]
+  category:
+  - '{{qol}}'
   header: '{{mine_group}}'
-  text: '{{mine_group_descr}}'
   hasHeader: true
   children:
   - url: resource-grid-overlay.overlay.mine_boxes
     name: resource-grid-overlay-mine-boxes
     text: '{{mine_boxes}}'
-    tooltip: '{{mine_boxes_tooltip}}'
     display: Switch
     contents:
       type: boolean
@@ -194,7 +186,6 @@ options:
   - url: resource-grid-overlay.overlay.mine_colour
     name: resource-grid-overlay-mine-colour
     text: '{{mine_colour}}'
-    tooltip: '{{mine_colour_tooltip}}'
     enabled: resource-grid-overlay.overlay.mine_boxes
     display: Choice
     contents:
@@ -220,9 +211,8 @@ options:
   - url: resource-grid-overlay.tune.mine_size
     name: resource-grid-overlay-tune-mine-size
     text: '{{tune_mine_size}}'
-    tooltip: '{{tune_mine_size_tooltip}}'
     enabled: resource-grid-overlay.overlay.mine_boxes
-    display: Number
+    display: Slider
     contents:
       value: 4
       min: 1

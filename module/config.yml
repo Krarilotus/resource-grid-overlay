@@ -1,0 +1,40 @@
+meta:
+  version: 1.0.0
+config-sparse:
+  modules:
+    resource-grid-overlay:
+      config:
+        overlay:
+          key:
+            contents:
+              value: letter_g
+          outside_editor:
+            contents:
+              value: true
+          flattened_only:
+            contents:
+              value: true
+          hide_in_v_view:
+            contents:
+              value: true
+          grid_colour:
+            contents:
+              value: white
+          rotation_lines:
+            contents:
+              value: true
+          rotation_colour:
+            contents:
+              value: cyan
+          mine_boxes:
+            contents:
+              value: true
+          mine_colour:
+            contents:
+              value: red
+        tune:
+          mine_size:
+            contents:
+              value: 4
+  plugins: {}
+  load-order: []

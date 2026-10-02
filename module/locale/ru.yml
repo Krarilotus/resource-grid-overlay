@@ -1,0 +1,58 @@
+colour_black: Чёрный
+colour_cyan: Голубой
+colour_green: Зелёный
+colour_magenta: Пурпурный
+colour_orange: Оранжевый
+colour_red: Красный
+colour_white: Белый
+colour_yellow: Жёлтый
+key_caps_lock: Alt + Caps Lock
+key_delete_key: Alt + Delete
+key_end_key: Alt + End
+key_f1: Alt + F1
+key_f2: Alt + F2
+key_f3: Alt + F3
+key_f4: Alt + F4
+key_f5: Alt + F5
+key_f6: Alt + F6
+key_f7: Alt + F7
+key_f8: Alt + F8
+key_f9: Alt + F9
+key_home: Alt + Home
+key_insert: Alt + Insert
+key_letter_a: Alt + A
+key_letter_b: Alt + B
+key_letter_f: Alt + F
+key_letter_g: Alt + G
+key_letter_i: Alt + I
+key_letter_j: Alt + J
+key_letter_l: Alt + L
+key_letter_m: Alt + M
+key_letter_n: Alt + N
+key_letter_o: Alt + O
+key_letter_p: Alt + P
+key_letter_s: Alt + S
+key_letter_w: Alt + W
+key_letter_y: Alt + Y
+key_letter_z: Alt + Z
+key_numpad_add: Alt + Цифровая клавиатура +
+key_numpad_decimal: Alt + Цифровая клавиатура .
+key_numpad_divide: Alt + Цифровая клавиатура /
+key_numpad_multiply: Alt + Цифровая клавиатура *
+key_numpad_subtract: Alt + Цифровая клавиатура -
+key_page_down: Alt + Page Down
+key_page_up: Alt + Page Up
+mine_boxes: Показать площадь железного рудника
+mine_colour: Цвет площади
+mine_group: Размер железного рудника
+overlay_flattened_only: Только в плоском виде
+overlay_grid_colour: Цвет сетки
+overlay_group: Сетка ресурсов
+overlay_hide_in_v_view: Скрывать в режиме клавиши V
+overlay_key: Клавиша сетки (Alt+клавиша)
+overlay_outside_editor: Разрешить сетку в игре
+qol: Quality of Life
+rotation_colour: Цвет границ
+rotation_group: Ориентация замка
+rotation_lines: Показать границы поворота замка
+tune_mine_size: Ширина площади (клетки)
