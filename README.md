@@ -66,3 +66,5 @@ has a tenth of that budget spare.
 Every address is found by pattern scan or read from the instruction that uses it, and a pattern
 another module has already overwritten disables the part that needs it instead of taking the
 game down.
+
+See [the UCP integration review](docs/ucp-review.md) for ownership and remaining acceptance.

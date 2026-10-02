@@ -1,0 +1,58 @@
+colour_black: 黑色
+colour_cyan: 青色
+colour_green: 绿色
+colour_magenta: 品红
+colour_orange: 橙色
+colour_red: 红色
+colour_white: 白色
+colour_yellow: 黄色
+key_caps_lock: Alt + Caps Lock
+key_delete_key: Alt + Delete
+key_end_key: Alt + End
+key_f1: Alt + F1
+key_f2: Alt + F2
+key_f3: Alt + F3
+key_f4: Alt + F4
+key_f5: Alt + F5
+key_f6: Alt + F6
+key_f7: Alt + F7
+key_f8: Alt + F8
+key_f9: Alt + F9
+key_home: Alt + Home
+key_insert: Alt + Insert
+key_letter_a: Alt + A
+key_letter_b: Alt + B
+key_letter_f: Alt + F
+key_letter_g: Alt + G
+key_letter_i: Alt + I
+key_letter_j: Alt + J
+key_letter_l: Alt + L
+key_letter_m: Alt + M
+key_letter_n: Alt + N
+key_letter_o: Alt + O
+key_letter_p: Alt + P
+key_letter_s: Alt + S
+key_letter_w: Alt + W
+key_letter_y: Alt + Y
+key_letter_z: Alt + Z
+key_numpad_add: Alt + 数字小键盘 +
+key_numpad_decimal: Alt + 数字小键盘 .
+key_numpad_divide: Alt + 数字小键盘 /
+key_numpad_multiply: Alt + 数字小键盘 *
+key_numpad_subtract: Alt + 数字小键盘 -
+key_page_down: Alt + Page Down
+key_page_up: Alt + Page Up
+mine_boxes: 显示铁矿占地
+mine_colour: 占地颜色
+mine_group: 铁矿占地
+overlay_flattened_only: 仅在平坦视图显示
+overlay_grid_colour: 网格颜色
+overlay_group: 资源网格
+overlay_hide_in_v_view: 在 V 键视图隐藏
+overlay_key: 网格快捷键（Alt+按键）
+overlay_outside_editor: 允许游戏中显示网格
+qol: Quality of Life
+rotation_colour: 分界线颜色
+rotation_group: 城堡朝向
+rotation_lines: 显示城堡旋转分界线
+tune_mine_size: 占地宽度（格）
