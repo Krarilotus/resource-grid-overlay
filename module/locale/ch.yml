@@ -51,7 +51,7 @@ overlay_group: 资源网格
 overlay_hide_in_v_view: 在 V 键视图隐藏
 overlay_key: 网格快捷键（Alt+按键）
 overlay_outside_editor: 允许游戏中显示网格
-qol: Quality of Life
+qol: 体验优化
 rotation_colour: 分界线颜色
 rotation_group: 城堡朝向
 rotation_lines: 显示城堡旋转分界线
