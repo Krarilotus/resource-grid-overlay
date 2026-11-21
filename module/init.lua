@@ -334,9 +334,11 @@ local OFFSETS_IN_GAME_SCREEN_IDS = { 5, 10, 15 }
 
 -- `requestScreenChange`, three bytes in, where EBP already holds the screen the game is
 -- about to move to and nothing has been written yet.
-local SCREEN_CHANGE_AOB = "83 FD 17 56 8B F1 75 05 BD 29 00 00 00 8B 44 24 10 53 57 "
-    .. "89 6E 18"
-local SIZE_SCREEN_CHANGE_HOOK = 6
+-- Resolution Based Zoom owns the six bytes immediately before this anchor.
+-- Observe the pending screen write instead, after the request is normalized.
+local SCREEN_CHANGE_AOB = "75 05 BD 29 00 00 00 8B 44 24 10 53 57 89 6E 18 89 46 04 FF 15 ? ? ? ? 89 46 08 8B C5 83 E8 0C"
+local OFFSET_SCREEN_WRITE = 13
+local SIZE_SCREEN_WRITE = 6
 
 ---------------------------------------------------------------------------------------
 -- Options
@@ -1423,13 +1425,19 @@ return {
       end
       local screenChangeSite = scanOptional(
         SCREEN_CHANGE_AOB, "the screen change function")
+      local ok, duplicate = true, nil
       if screenChangeSite ~= nil then
+        ok, duplicate = pcall(core.scanForAOB, SCREEN_CHANGE_AOB, screenChangeSite + 1)
+      end
+      if screenChangeSite ~= nil and ok and (not duplicate or duplicate == 0) then
         core.detourCode(function(registers)
           if not mapScreens[registers.EBP] then
             writeInteger(control + SHOWN, 0)
           end
           return registers
-        end, screenChangeSite, SIZE_SCREEN_CHANGE_HOOK)
+        end, screenChangeSite + OFFSET_SCREEN_WRITE, SIZE_SCREEN_WRITE)
+      else
+        log(WARNING, "resource-grid-overlay: could not resolve a unique screen reset hook")
       end
     end
 

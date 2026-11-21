@@ -147,6 +147,8 @@ class Host:
         g.log = lambda level, message: self.logs.append('%s: %s' % (level, message))
         c = lua.table()
         c.AOBScan = self.scan
+        c.scanForAOB = lambda pattern, start=None: next(
+            (hit for hit in self.E.find(pattern) if hit is not None and (start is None or hit >= start)), None)
         c.readInteger = lambda a: self.m.s32(int(a))
         c.writeInteger = lambda a, v: self.m.put32(int(a), int(v))
         c.readByte = lambda a: self.m.read(int(a), 1)[0]
@@ -265,7 +267,8 @@ class Host:
         self.detours[self.keySite](self.regs(esi, ecx))
 
     def screen(self, ebp):
-        self.detours[self.screenSite](self.regs(ebp=ebp))
+        callback = self.detours.get(self.screenSite + 19) or self.detours[self.screenSite]
+        callback(self.regs(ebp=ebp))
 
     def frame(self):
         """One pass through the render call site. Returns executed instruction count."""
