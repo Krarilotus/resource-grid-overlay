@@ -1,5 +1,21 @@
 # Resource Grid Overlay
 
+> **This module now lives in Map Editor Improvements.** The resource grid, its options and the
+> bench below moved into [Map Editor Improvements](https://github.com/Monsterfisch/MapEditorImprovements)
+> (from version 1.0.65), as its "Resource grid" settings group, so one module owns the map
+> editor's drawing and input. Proposed in [Map Editor Improvements PR #3](https://github.com/Monsterfisch/MapEditorImprovements/pull/3).
+>
+> - Use Map Editor Improvements instead of this module. While both are turned on, Map Editor
+>   Improvements leaves the grid to this module and says so in the log.
+> - Settings are not taken over: the options have new names there
+>   (`map-editor-improvements.grid.*` instead of `resource-grid-overlay.overlay.*` and
+>   `.tune.*`). If you changed them, set them again; the defaults are the same.
+> - With a Custom Hotkeys version that lets modules register actions, the toggle can be rebound
+>   there. Without it, Alt + G works as before.
+>
+> The code below stays as the last stand-alone release. Credits: Monsterfish (author), merged
+> with Heroesflorian's agreement as co-author of Map Editor Improvements.
+
 A UCP3 module for Stronghold Crusader and Stronghold Crusader Extreme. It draws the grid the
 AI reads when it looks for places to put its resource buildings - 5 x 5 blocks of tiles, not
 single tiles - over the terrain in the map editor, together with the four lines where a keep's
