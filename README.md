@@ -3,7 +3,7 @@
 > **This module now lives in Map Editor Improvements.** The resource grid, its options and the
 > bench below moved into [Map Editor Improvements](https://github.com/Monsterfisch/MapEditorImprovements)
 > (from version 1.0.65), as its "Resource grid" settings group, so one module owns the map
-> editor's drawing and input. Proposed in [Map Editor Improvements PR #3](https://github.com/Monsterfisch/MapEditorImprovements/pull/3).
+> editor's drawing and input.
 >
 > - Use Map Editor Improvements instead of this module. While both are turned on, Map Editor
 >   Improvements leaves the grid to this module and says so in the log.
@@ -95,8 +95,7 @@ terrain as well.
 * Nothing is written to the map. The lines are drawn onto the frame after the terrain,
   the buildings and the map overlays, and are gone the moment you switch them off.
 * Switched off, the overlay costs next to nothing. Switched on, the lines are only worked
-  out again when the camera, zoom or rotation changes, and drawing them takes about a
-  seventh of the work it did in 1.0.0, with exactly the same pixels on screen.
+  out again when the camera, zoom or rotation changes.
 * The key can be changed in the settings. Every combination offered there does nothing
   in the game, so the overlay key never sets off a second action as well.
 ## What is in here
@@ -105,7 +104,7 @@ terrain as well.
 |---|---|
 | `module/` | the module itself - this is the source of truth, edited in place |
 | `bench/` | the emulator bench: the module's own Lua runs against the real exe image, its assembly is assembled with UCP's own fasm.dll and then executed, together with the game's own line drawer |
-| `bench/reference-1.0.0/` | the module as 1.0.0 shipped it, which drew through the game's pencil; the bench holds this build to the same pixels |
+| `bench/reference-1.0.0/` | the module as 1.0.0 shipped it, which drew through the game's pencil; the bench holds this build to the same pixels, drawn with about a seventh of 1.0.0's work |
 | `tools/publish.py` | copies `module/` into the game's module folder under a new version |
 | `tools/package.py` | packs `module/` into `dist/<name>-<version>.zip`, the file a release is uploaded with |
 
