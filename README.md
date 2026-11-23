@@ -13,8 +13,8 @@
 > - With a Custom Hotkeys version that lets modules register actions, the toggle can be rebound
 >   there. Without it, Alt + G works as before.
 >
-> The code below stays as the last stand-alone release. Credits: Monsterfish (author), merged
-> with Heroesflorian's agreement as co-author of Map Editor Improvements.
+> The code below stays as the last stand-alone release. Credits: Monsterfish (author of this
+> module); Map Editor Improvements is by Monsterfish and Heroesflorian.
 
 A UCP3 module for Stronghold Crusader and Stronghold Crusader Extreme. It draws the grid the
 AI reads when it looks for places to put its resource buildings - 5 x 5 blocks of tiles, not
@@ -94,8 +94,9 @@ terrain as well.
 * Leaving the editor switches it off, so entering the editor always starts clean.
 * Nothing is written to the map. The lines are drawn onto the frame after the terrain,
   the buildings and the map overlays, and are gone the moment you switch them off.
-* Switched off, the overlay costs next to nothing. Switched on, the lines are only worked
-  out again when the camera, zoom or rotation changes.
+* Switched off, the overlay costs next to nothing. Switched on, it reuses its lines while the
+  view stays the same, and works them out again when the camera, zoom, rotation, rendered area
+  or colour mode changes.
 * The key can be changed in the settings. Every combination offered there does nothing
   in the game, so the overlay key never sets off a second action as well.
 ## What is in here
